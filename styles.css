@@ -1,0 +1,596 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /* Hack para Box Model **/
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root{
+--color-principal:#cd9ead ;
+--color-violeta: #65495d;
+--color-beige: #f3efee;
+--color-violeta2: #876577;
+--color-gris: #1e1e1e;
+--negro: #000;
+--blanco: #fff;
+--fuente-principal:'Roboto', sans-serif;
+--fuente-titulos: 'Alkatra', cursive;
+--fuente-elegante: 'Cormorant Garamond', serif;
+}
+
+.container{
+  max-width: 90rem;
+}
+
+.secciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+
+body{
+  background-color: var(--color-beige);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuente-elegante);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family:var(--fuente-principal);
+  font-size: 1.2rem;
+}
+a{
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.seccion-clara{
+  color: var(--negro);
+  background-color: var(--color-beige);
+}
+
+.seccion-clara h4{
+  text-align: center;
+  padding: 20px;
+}
+
+.seccion-oscura{
+  background-color: var(--color-gris);
+  color: var(--color-beige);
+}
+
+.seccion-oscura h4{
+  text-align: center;
+  padding: 20px;
+}
+
+/* barra de navegacion */
+ .navbar-collapse{
+  justify-content: space-between;
+}
+
+.navbar{
+  padding: 2rem; 
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.nav-link{
+  color: var(--blanco);
+  margin-left: 15px;
+}
+
+.enlace-logo{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--fuente-titulos);
+}
+
+.bi-list{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.logo-nav{
+  display: flex;
+  align-items: center;
+}
+.nav-link{ color: var(--blanco) !important;}
+
+.nav-link:hover{
+  font-size: 1.4rem;
+}
+
+.navbar-brand-icon{
+  color: #fff;
+}
+
+.logo-fenix{
+  font-size: 3rem;
+  font-family: var(--fuente-titulos);
+  font-weight: bold;
+  color: var(--color-principal) !important;
+}
+
+/* header */
+
+.header-imagen{
+  width: 100%;
+  height: 50rem;
+  background-image: url(img/Diseño\ sin\ título.png);
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-words{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 50%;
+  color: var(--blanco);
+  padding-left: 20px;
+
+}
+
+.header-titulo{
+  color: var(--blanco);
+  font-size: 7rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.header-texto{
+  font-size: 1.8rem;
+}
+
+.header-button{
+background-color: var(--color-principal);
+border: none;
+font-size: 1.6rem;
+margin-top: 2rem;
+padding: 10px;
+}
+
+.header-button:hover{
+  background-color: var(--negro);
+}
+
+
+/* sobre nosotros */
+.about-us{
+  padding: 40px;
+}
+
+.about-us video{
+  height: 100%;
+}
+
+.about-us-description{
+  padding: 20px;
+  text-align: justify;
+  width: 200px;
+}
+
+.descripcion{
+  font-size: 1.8rem;
+}
+
+
+/* servicios */
+
+
+.servicio{
+  border-bottom: 1px solid var(--color-beige);
+  border-right: 1px solid var(--color-beige);
+  height: 200px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.servicios-button{
+  background-color: var(--color-gris);
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  bottom: 10px;
+  }
+
+
+  
+  .servicios-titulo{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-family: var(--fuente-elegante);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }  
+
+  /* servicios :hover */
+  .servicios-titulo, .servicios-button{
+    position: absolute;
+    z-index: 1;
+    color: var(--color-beige);
+  }
+  
+  .servicios-titulo {
+    top: 10px;
+    left: 10px;
+  }
+  
+  
+  
+  .servicios-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+    color: var(--color-beige);
+  }
+  
+  .servicio:hover .servicios-button{
+    background-color: var(--color-principal);
+    color: #000;
+    font-weight: bold;
+  }
+
+  .servicio:hover .servicios-hover-text{
+    opacity: 1;
+  }
+  
+  .servicio:hover .servicios-titulo{
+    opacity: 0;
+  }
+
+/* servicio 1 */
+
+.extensiones{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/extensiones.jpg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+
+.extensiones:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/extensiones.jpg);
+}
+
+
+/* servicio 2*/
+
+.tylp{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(img/tylp.png);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.tylp:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/tylp.png);
+}
+
+/* servicio 3 */
+
+.liftin{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/liftin.jpg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.liftin:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/liftin.jpg);
+}
+
+/* servicio 4 */
+
+.henna{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/henna.jpg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.henna:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/henna.jpg);
+}
+
+/* servicio 5 */
+
+.tylc{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tylc.jpg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tylc:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/tylc.jpg);
+}
+
+/* servicio 6 */
+
+.depilacion{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/depilacion.jpg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.depilacion:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/depilacion.jpg);
+}
+
+
+/* transicion */
+.transicion{
+  height: 7rem;
+  background: rgb(30,30,30);
+background: linear-gradient(180deg, rgba(30,30,30,1) 35%, rgba(243,239,238,1) 100%);
+}
+
+
+/* testimonios */
+.testimonios{
+  padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item{
+  height: 30rem;
+}
+
+.seccion-descripcion{
+  font-style: italic;
+}
+
+
+.carousel-item .container{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.star{
+  color: #efb810;
+}
+
+.testimonio-texto{
+  max-width: 70%;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+
+.testimonio-info p{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  
+}
+
+
+.carousel-control-next,
+.carousel-control-prev{
+  border: none;
+}
+
+.controles{
+  filter: invert(1) grayscale(100);}
+
+.carousel-abajo{
+  margin: 10px;
+  width: 30px;
+  border: 1px solid;
+  padding: 2px;
+}
+
+
+/* contacto */
+.contacto .container{
+  max-width: 90rem;
+  min-height: 150px;
+  padding: 20px;
+
+}
+
+.agenda{
+  margin-top: -5rem;
+  background-color: var(--color-principal);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+  justify-content: center;
+
+}
+ .fila{
+  width: 100%;
+  display: flex;
+  align-items: center;
+ }
+
+ .contacto .llamado{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .contacto button{
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 1.5em;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+  background-color: white;
+  color: #1b1b32;
+}
+.boton{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* footer */
+
+footer{
+min-height: 30rem;
+}
+.logo-footer{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  
+}
+
+
+.icono{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  width: 50px;
+  height: 50px;
+  color: var(--blanco);
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid var(--blanco);
+  transition: all 0.2s ease-in;
+}
+
+.icono:hover{
+  background-color: var(--blanco);
+  color: var(--color-principal);
+}
+
+.copy{
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .navbar-brand{
+    display: none;
+  }
+
+  .boton{
+    margin-top: 2rem;
+  }
+
+  .contacto button{
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .nav-link{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .header-titulo{
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicios-titulo{
+    font-size: 2rem;
+  }
+
+  .servicios-button{
+    font-size: 1.5rem;
+    padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+  .testimonio-imagen{
+      height: 120px;
+      width: 120px;
+  }
+
+  .testimonio-texto{
+      font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .testimonio-imagen{
+      height: 90px;
+      width: 90px;
+  }
+  .seccion-descripcion{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 335px){
+  .testimonio-texto{
+    font-size: 11px;
+  }
+}
