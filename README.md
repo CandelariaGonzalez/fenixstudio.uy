@@ -7,10 +7,10 @@ customer support and generating more business opportunities. It utilizes **HTML,
 ## Author -
 **Candelaria Gonzalez**
 
-* [Linkedin] (https://www.linkedin.com/in/candelariagonzalezdev/)
+* [Linkedin](https://www.linkedin.com/in/candelariagonzalezdev/)
 
 ## View live proyect
-* [https://candelariagonzalez.github.io/fenixstudio.uy/] (https://candelariagonzalez.github.io/fenixstudio.uy/)
+* [https://candelariagonzalez.github.io/fenixstudio.uy/](https://candelariagonzalez.github.io/fenixstudio.uy/)
 
 ## Hiring
 If you want you can contact me at m.candelariagonzalez.s@gmail.com
